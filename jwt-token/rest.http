@@ -1,0 +1,29 @@
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzE3MTg0NzEsImF1ZCI6IjYzYTQ1NTVjMGJmMTQ2ZmI1OTA2YzA2ZCIsImlzcyI6ImRyLmNvbSJ9.w0tSxojbKKhoCXgABLvtRoqo1zBU_RmtrSOWtCTPvqY
+
+###
+# GET http://localhost:3000/abc
+
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "axbxxce@gmail.com",
+    "password": "1238588888"
+}
+
+###
+POST http://localhost:3000/auth/logout
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "axbxxce@gmail.com",
+    "password": "1238588888"
+}
+
+###
+POST http://localhost:3000/auth/refresh-token
